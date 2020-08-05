@@ -5,6 +5,8 @@ All notable changes to this project will be documented in this file.
 <a name="unreleased"></a>
 ## [Unreleased]
 
+- Update module versions to support v3 provider
+- add CHANGELOG.md
 
 
 <a name="1.0.0"></a>
