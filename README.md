@@ -1,3 +1,5 @@
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/umotif-public/terraform-aws-ssm-parameters?style=social)
+
 # terraform-aws-ssm-parameters
 Terraform module creating encrypted and non-encrypted AWS SSM parameters
 
