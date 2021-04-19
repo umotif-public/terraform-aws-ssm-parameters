@@ -5,7 +5,9 @@ Terraform module creating encrypted and non-encrypted AWS SSM parameters
 
 ## Terraform versions
 
-Terraform 0.12. Pin module version to `~> v1.0`. Submit pull-requests to `master` branch.
+Terraform 0.14.5. Pin module version to `~> v2.0`.
+Terraform 0.12 - 0.14.4. Pin module version to `~> v1.0`.
+Submit pull-requests to `master` branch.
 
 ## Usage
 
@@ -42,7 +44,8 @@ module "ssm-parameters" {
 
 ## Assumptions
 
-Module is to be used with Terraform > 0.12.
+Module v1.0 is to be used with Terraform > 0.12.
+Module v2.0+ is to be used with Terraform > 0.14.5
 
 ## Examples
 
@@ -57,35 +60,45 @@ Module managed by [Marcin Cuber](https://github.com/marcincuber) [LinkedIn](http
 
 | Name | Version |
 |------|---------|
-| terraform | >= 0.12.6 |
-| aws | >= 2.41 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.14.5 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 2.41 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| aws | >= 2.41 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 2.41 |
+
+## Modules
+
+No modules.
+
+## Resources
+
+| Name | Type |
+|------|------|
+| [aws_ssm_parameter.parameters](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ssm_parameter) | resource |
+| [aws_ssm_parameter.secure_parameters](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ssm_parameter) | resource |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| advanced\_tier | List of parameter names that should have tier set to Advanced | `list(string)` | `[]` | no |
-| kms\_key\_id | The KMS key to use for encryption | `string` | `""` | no |
-| name\_prefix | Path used for each SSM parameter created by the module | `any` | n/a | yes |
-| parameters | Non-encrypted parameters | `map(any)` | `{}` | no |
-| prevent\_overwrite | List of parameter names to prevent overwrite for | `list(string)` | `[]` | no |
-| secure\_parameters | Secure parameters | `map(any)` | `{}` | no |
-| tags | n/a | `map(any)` | `{}` | no |
+| <a name="input_advanced_tier"></a> [advanced\_tier](#input\_advanced\_tier) | List of parameter names that should have tier set to Advanced | `list(string)` | `[]` | no |
+| <a name="input_kms_key_id"></a> [kms\_key\_id](#input\_kms\_key\_id) | The KMS key to use for encryption | `string` | `""` | no |
+| <a name="input_name_prefix"></a> [name\_prefix](#input\_name\_prefix) | Path used for each SSM parameter created by the module | `any` | n/a | yes |
+| <a name="input_parameters"></a> [parameters](#input\_parameters) | Non-encrypted parameters | `map(any)` | `{}` | no |
+| <a name="input_prevent_overwrite"></a> [prevent\_overwrite](#input\_prevent\_overwrite) | List of parameter names to prevent overwrite for | `list(string)` | `[]` | no |
+| <a name="input_secure_parameters"></a> [secure\_parameters](#input\_secure\_parameters) | Secure parameters | `map(any)` | `{}` | no |
+| <a name="input_tags"></a> [tags](#input\_tags) | n/a | `map(any)` | `{}` | no |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| parameter\_path | n/a |
-| parameters | n/a |
-| secure\_parameters | n/a |
-
+| <a name="output_parameter_path"></a> [parameter\_path](#output\_parameter\_path) | n/a |
+| <a name="output_parameters"></a> [parameters](#output\_parameters) | n/a |
+| <a name="output_secure_parameters"></a> [secure\_parameters](#output\_secure\_parameters) | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## License
