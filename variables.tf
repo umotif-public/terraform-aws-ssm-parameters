@@ -1,5 +1,6 @@
 variable "name_prefix" {
   description = "Path used for each SSM parameter created by the module"
+  type        = string
 }
 
 variable "tags" {
@@ -17,12 +18,6 @@ variable "secure_parameters" {
   description = "Secure parameters"
   type        = map(any)
   default     = {}
-}
-
-variable "prevent_overwrite" {
-  description = "List of parameter names to prevent overwrite for"
-  type        = list(string)
-  default     = []
 }
 
 variable "kms_key_id" {
