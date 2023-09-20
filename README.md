@@ -14,7 +14,7 @@ Submit pull-requests to `master` branch.
 ```hcl
 module "ssm-parameters" {
   source = "umotif-public/ssm-parameters/aws"
-  version = "~> 1.0.0"
+  version = "~> 3.0.0"
 
   name_prefix = "test/example-path"
 
@@ -45,7 +45,8 @@ module "ssm-parameters" {
 ## Assumptions
 
 Module v1.0 is to be used with Terraform > 0.12.
-Module v2.0+ is to be used with Terraform > 0.14.5
+Module v2.0 is to be used with Terraform > 0.14.5.
+Module v3.0+ is to be used with Terraform > 1.0.11.
 
 ## Examples
 
@@ -53,21 +54,21 @@ Module v2.0+ is to be used with Terraform > 0.14.5
 
 ## Authors
 
-Module managed by [Marcin Cuber](https://github.com/marcincuber) [LinkedIn](https://www.linkedin.com/in/marcincuber/).
+- [uMotif](https://github.com/umotif-public)
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.14.5 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 2.41 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0.11 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 3.53 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 2.41 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 3.53 |
 
 ## Modules
 
@@ -86,9 +87,8 @@ No modules.
 |------|-------------|------|---------|:--------:|
 | <a name="input_advanced_tier"></a> [advanced\_tier](#input\_advanced\_tier) | List of parameter names that should have tier set to Advanced | `list(string)` | `[]` | no |
 | <a name="input_kms_key_id"></a> [kms\_key\_id](#input\_kms\_key\_id) | The KMS key to use for encryption | `string` | `""` | no |
-| <a name="input_name_prefix"></a> [name\_prefix](#input\_name\_prefix) | Path used for each SSM parameter created by the module | `any` | n/a | yes |
+| <a name="input_name_prefix"></a> [name\_prefix](#input\_name\_prefix) | Path used for each SSM parameter created by the module | `string` | n/a | yes |
 | <a name="input_parameters"></a> [parameters](#input\_parameters) | Non-encrypted parameters | `map(any)` | `{}` | no |
-| <a name="input_prevent_overwrite"></a> [prevent\_overwrite](#input\_prevent\_overwrite) | List of parameter names to prevent overwrite for | `list(string)` | `[]` | no |
 | <a name="input_secure_parameters"></a> [secure\_parameters](#input\_secure\_parameters) | Secure parameters | `map(any)` | `{}` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | n/a | `map(any)` | `{}` | no |
 
