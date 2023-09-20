@@ -5,7 +5,8 @@ All notable changes to this project will be documented in this file.
 <a name="unreleased"></a>
 ## [Unreleased]
 
-- Remove 'overwrite' + updates
+- Add versions file for example
+- Remove 'overwrite' + updates ([#4](https://github.com/marcincuber/terraform-aws-ssm-parameters/issues/4))
 
 
 <a name="2.0.0"></a>
