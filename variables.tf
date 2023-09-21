@@ -31,3 +31,9 @@ variable "advanced_tier" {
   type        = list(string)
   default     = []
 }
+
+variable "prevent_overwrite" {
+  description = "[Deprecated - will be removed properly in 6.x] List of parameter names to prevent overwrite for"
+  type        = list(string)
+  default     = []
+}

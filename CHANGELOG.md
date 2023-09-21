@@ -5,7 +5,12 @@ All notable changes to this project will be documented in this file.
 <a name="unreleased"></a>
 ## [Unreleased]
 
-- Add versions file for example
+
+
+<a name="3.0.0"></a>
+## [3.0.0] - 2023-09-20
+
+- Add versions file for example ([#5](https://github.com/marcincuber/terraform-aws-ssm-parameters/issues/5))
 - Remove 'overwrite' + updates ([#4](https://github.com/marcincuber/terraform-aws-ssm-parameters/issues/4))
 
 
@@ -36,7 +41,8 @@ All notable changes to this project will be documented in this file.
 - Initial commit
 
 
-[Unreleased]: https://github.com/marcincuber/terraform-aws-ssm-parameters/compare/2.0.0...HEAD
+[Unreleased]: https://github.com/marcincuber/terraform-aws-ssm-parameters/compare/3.0.0...HEAD
+[3.0.0]: https://github.com/marcincuber/terraform-aws-ssm-parameters/compare/2.0.0...3.0.0
 [2.0.0]: https://github.com/marcincuber/terraform-aws-ssm-parameters/compare/1.0.2...2.0.0
 [1.0.2]: https://github.com/marcincuber/terraform-aws-ssm-parameters/compare/1.0.1...1.0.2
 [1.0.1]: https://github.com/marcincuber/terraform-aws-ssm-parameters/compare/1.0.0...1.0.1

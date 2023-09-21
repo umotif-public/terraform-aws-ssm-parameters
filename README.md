@@ -89,6 +89,7 @@ No modules.
 | <a name="input_kms_key_id"></a> [kms\_key\_id](#input\_kms\_key\_id) | The KMS key to use for encryption | `string` | `""` | no |
 | <a name="input_name_prefix"></a> [name\_prefix](#input\_name\_prefix) | Path used for each SSM parameter created by the module | `string` | n/a | yes |
 | <a name="input_parameters"></a> [parameters](#input\_parameters) | Non-encrypted parameters | `map(any)` | `{}` | no |
+| <a name="input_prevent_overwrite"></a> [prevent\_overwrite](#input\_prevent\_overwrite) | [Deprecated - will be removed properly in 6.x] List of parameter names to prevent overwrite for | `list(string)` | `[]` | no |
 | <a name="input_secure_parameters"></a> [secure\_parameters](#input\_secure\_parameters) | Secure parameters | `map(any)` | `{}` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | n/a | `map(any)` | `{}` | no |
 
