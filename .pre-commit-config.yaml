@@ -1,25 +1,25 @@
 repos:
-- repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: v4.4.0
-  hooks:
-  - id: check-added-large-files
-    args: ['--maxkb=500']
-  - id: check-executables-have-shebangs
-  - id: pretty-format-json
-    args: ['--autofix', '--no-sort-keys', '--indent=2']
-  - id: check-byte-order-marker
-  - id: check-case-conflict
-  - id: check-executables-have-shebangs
-  - id: check-merge-conflict
-  - id: check-symlinks
-  - id: detect-private-key
-  - id: check-merge-conflict
-  - id: detect-aws-credentials
-    args: ['--allow-missing-credentials']
-  - id: trailing-whitespace
-- repo: https://github.com/antonbabenko/pre-commit-terraform
-  rev: v1.83.3
-  hooks:
-  - id: terraform_fmt
-  - id: terraform_docs
-  - id: terraform_tflint
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: check-added-large-files
+        args: ["--maxkb=500"]
+      - id: check-executables-have-shebangs
+      - id: pretty-format-json
+        args: ["--autofix", "--no-sort-keys", "--indent=2"]
+      - id: fix-byte-order-marker
+      - id: check-case-conflict
+      - id: check-executables-have-shebangs
+      - id: check-merge-conflict
+      - id: check-symlinks
+      - id: detect-private-key
+      - id: check-merge-conflict
+      - id: detect-aws-credentials
+        args: ["--allow-missing-credentials"]
+      - id: trailing-whitespace
+  - repo: https://github.com/antonbabenko/pre-commit-terraform
+    rev: v1.105.0
+    hooks:
+      - id: terraform_fmt
+      - id: terraform_docs
+      - id: terraform_tflint

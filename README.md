@@ -56,7 +56,7 @@ Module v3.0+ is to be used with Terraform > 1.0.11.
 
 - [uMotif](https://github.com/umotif-public)
 
-<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- BEGIN_TF_DOCS -->
 ## Requirements
 
 | Name | Version |
@@ -85,7 +85,6 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_advanced_tier"></a> [advanced\_tier](#input\_advanced\_tier) | List of parameter names that should have tier set to Advanced | `list(string)` | `[]` | no |
 | <a name="input_kms_key_id"></a> [kms\_key\_id](#input\_kms\_key\_id) | The KMS key to use for encryption | `string` | `""` | no |
 | <a name="input_name_prefix"></a> [name\_prefix](#input\_name\_prefix) | Path used for each SSM parameter created by the module | `string` | n/a | yes |
 | <a name="input_parameters"></a> [parameters](#input\_parameters) | Non-encrypted parameters | `map(any)` | `{}` | no |
@@ -100,7 +99,7 @@ No modules.
 | <a name="output_parameter_path"></a> [parameter\_path](#output\_parameter\_path) | n/a |
 | <a name="output_parameters"></a> [parameters](#output\_parameters) | n/a |
 | <a name="output_secure_parameters"></a> [secure\_parameters](#output\_secure\_parameters) | n/a |
-<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- END_TF_DOCS -->
 
 ## License
 
