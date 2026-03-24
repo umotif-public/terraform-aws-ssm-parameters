@@ -5,7 +5,6 @@ resource "aws_ssm_parameter" "parameters" {
   type  = "String"
   value = each.value
 
-  tier      = contains(var.advanced_tier, each.key) ? "Advanced" : "Standard"
   overwrite = contains(var.prevent_overwrite, each.key) ? false : true
 
   tags = var.tags
@@ -19,7 +18,6 @@ resource "aws_ssm_parameter" "secure_parameters" {
   value  = each.value
   key_id = var.kms_key_id != "" ? var.kms_key_id : null
 
-  tier      = contains(var.advanced_tier, each.key) ? "Advanced" : "Standard"
   overwrite = contains(var.prevent_overwrite, each.key) ? false : true
 
   tags = var.tags

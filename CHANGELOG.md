@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 <a name="unreleased"></a>
 ## [Unreleased]
 
+- DEVOPS-3808 Removed the tiering condition so you can pick any
+
+
+<a name="3.0.1"></a>
+## [3.0.1] - 2023-09-21
+
+- chore: documentation ([#6](https://github.com/marcincuber/terraform-aws-ssm-parameters/issues/6))
 
 
 <a name="3.0.0"></a>
@@ -41,7 +48,8 @@ All notable changes to this project will be documented in this file.
 - Initial commit
 
 
-[Unreleased]: https://github.com/marcincuber/terraform-aws-ssm-parameters/compare/3.0.0...HEAD
+[Unreleased]: https://github.com/marcincuber/terraform-aws-ssm-parameters/compare/3.0.1...HEAD
+[3.0.1]: https://github.com/marcincuber/terraform-aws-ssm-parameters/compare/3.0.0...3.0.1
 [3.0.0]: https://github.com/marcincuber/terraform-aws-ssm-parameters/compare/2.0.0...3.0.0
 [2.0.0]: https://github.com/marcincuber/terraform-aws-ssm-parameters/compare/1.0.2...2.0.0
 [1.0.2]: https://github.com/marcincuber/terraform-aws-ssm-parameters/compare/1.0.1...1.0.2
